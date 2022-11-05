@@ -5,6 +5,11 @@ import Tshirt from '../Tshirt/Tshirt';
 import './Home.css'
 const Home = () => {
     const tshirts = useLoaderData();
+
+    const handleAddToCart = tshirt => {
+        console.log(tshirt);
+    }
+
     return (
         <div className='home-container'>
            <div className="t-shirt-container">
@@ -12,6 +17,7 @@ const Home = () => {
                 tshirts.map(tshirt => <Tshirt
                     key={tshirt.id}
                     tshirt={tshirt}
+                    handleAddToCart={handleAddToCart}
                 ></Tshirt>)
             } 
            </div>
