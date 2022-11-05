@@ -6,7 +6,7 @@ const Aunty = ({house}) => {
         <div>
             <h4>Aunty</h4>
             <p><small>House:{house}</small></p>
-            <section className=''>
+            <section className='flex'>
                 <Cusin></Cusin>
                 <Cusin></Cusin>
             </section>

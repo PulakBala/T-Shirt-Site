@@ -1,8 +1,12 @@
 import React from 'react';
+import { createContext } from 'react';
 import Aunty from '../Aunty/Aunty';
 import Father from '../Father/Father';
 import Uncle from '../Uncle/Uncle';
 import './Grandpa.css'
+
+const RingContext = createContext('Martir Ring')
+
 const Grandpa = () => {
     const house = 7;
     return (
